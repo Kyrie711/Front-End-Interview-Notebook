@@ -76,7 +76,7 @@
 
 
 #### 1. DOCTYPE 的作用是什么？
-   
+
    相关知识点：
    ```
    IE5.5 引入了文档模式的概念，而这个概念是通过使用文档类型（DOCTYPE）切换实现的。
@@ -95,7 +95,7 @@
    在 html5 之后不再需要指定 DTD 文档，因为 html5 以前的 html 文档都是基于 SGML 的，所以需要通过指定 DTD 来定义文
    档中允许的属性以及一些规则。而 html5 不再基于 SGML 了，所以不再需要使用 DTD。
    ```
-  
+
 #### 2. 标准模式与兼容模式各有什么区别？
    ``` 
    标准模式的渲染方式和 JS 引擎的解析方式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示
@@ -138,7 +138,7 @@
    
    常见的行内元素有 a b span img strong sub sup button input label select textarea
    ```
-   
+
 
 #### 7. 块级元素定义
    ```
@@ -159,14 +159,17 @@
    ```
 
 #### 9. HTML5 元素的分类
-   ```
+
+<p style="color: red;font-size: 30px">这一对外呈现 inline 对内呈现 block 的属性</p>
+
+```
    HTML4中，元素被分成两大类: inline（内联元素）与 block（块级元素）。但在实际的开发过程中，因为页面表现的需要，前
    端工程师经常把 inline 元素的 display 值设定为 block （比如 a 标签），也经常把 block 元素的 display 值设定为
    inline 之后更是出现了 inline-block 这一对外呈现 inline 对内呈现 block 的属性。因此，简单地把 HTML 元素划分为
    inline 与 block 已经不再符合实际需求。
 
    HTML5中，元素主要分为7类：Metadata Flow Sectioning Heading Phrasing Embedded Interactive
-   ```
+```
 
 #### 10. 空元素定义
    ```
@@ -389,7 +392,7 @@
    [《优化关键渲染路径》](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path?hl=zh-cn)
 
 #### 24. 什么是重绘和回流？（浏览器绘制过程）
-  
+
    ```
     重绘: 当渲染树中的一些元素需要更新属性，而这些属性只是影响元素的外观、风格，而不会影响布局的操作，比如 background
           -color，我们将这样的操作称为重绘。
@@ -488,7 +491,7 @@
    ```
 
 #### 30. 简述一下你对 HTML 语义化的理解？
-    
+
    相关知识点：
    ```
     （1） 用正确的标签做正确的事情。
@@ -524,8 +527,8 @@
     而 <em> 和 <strong> 是语义样式标签。 <em> 表示一般的强调文本，而 <strong> 表示比 <em> 语义更强的强调文本。
     
     使用阅读设备阅读网页时：<strong> 会重读，而 <b> 是展示强调内容。
-   ``` 
-    
+   ```
+
    详细资料可以参考：
    [《HTML5 中的 b/strong，i/em 有什么区别？》](https://www.zhihu.com/question/19551271)
 
@@ -620,7 +623,7 @@
 
     离线的情况下，浏览器就直接使用离线存储的资源。
    ```
-    
+
 #### 35. 常见的浏览器端的存储技术有哪些？
    ```
     浏览器常见的存储技术有 cookie、localStorage 和 sessionStorage。
@@ -729,7 +732,7 @@
 
     （4）如果我们能够获得对应标签页的引用，通过 postMessage 方法也是可以实现多个标签页通信的。
    ```
-    
+
    回答：
    ```
     实现多个标签页之间的通信，本质上都是通过中介者模式来实现的。因为标签页之间没有办法直接通信，因此我们可以找一个中介者，
@@ -755,7 +758,7 @@
    [《使用 Web Storage API》](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
    [《JavaScript 的多线程，Worker 和 SharedWorker》](https://www.zhuwenlong.com/blog/article/590ea64fe55f0f385f9a12e5)
    [《实现多个标签页之间通信的几种方法》](https://juejin.im/post/5acdba01f265da23826e5633#heading-1)
-  
+
 
 #### 41. webSocket 如何兼容低版本浏览器？
    ```
@@ -796,7 +799,7 @@
 
 
 #### 44. 实现不使用 border 画出 1 px 高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。
-    
+
    ```html
      <div style="height:1px;overflow:hidden;background:red"></div>
    ```
@@ -829,7 +832,7 @@
    ```
     （1）区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水
     （2）有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试
-   ```  
+   ```
 
 #### 49. 渐进增强和优雅降级的定义
    ```
@@ -838,7 +841,7 @@
 
     优雅降级：一开始就根据高版本浏览器构建完整的功能，然后再针对低版本浏览器进行兼容。
    ```
-   
+
 #### 50. attribute 和 property 的区别是什么？
    ```
     attribute 是 dom 元素在文档中作为 html 标签拥有的属性；
@@ -946,7 +949,7 @@
    [《Meta 标签用法大全》](http://www.cnblogs.com/qiumohanyu/p/5431859.html)
 
 #### 57. css reset 和 normalize.css 有什么区别？
-    
+
    相关知识点：
    ```
     为什么会有 CSS Reset 的存在呢？那是因为早期的浏览器支持和理解的 CSS 规范不同，导致渲染页面时效果不一致，会出现很多
@@ -1041,7 +1044,7 @@
     下面这些标签可用在 head 部分：<base>, <link>, <meta>, <script>, <style>, 以及 <title>。
 
     <title> 定义文档的标题，它是 head 部分中唯一必需的元素。
-   ``` 
+   ```
 
 #### 61. HTML5 新增的表单元素有？
    ```
@@ -1073,7 +1076,7 @@
     readonly 规定输入字段为只读。input 内容会随着表单提交。
 
     无论设置 readonly 还是 disabled，通过 js 脚本都能更改 input 的 value
-   ```  
+   ```
 
 #### 65. 主流浏览器内核私有属性 css 前缀？
    ```

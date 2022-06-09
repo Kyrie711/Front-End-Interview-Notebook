@@ -1079,6 +1079,7 @@ clear:none|left|right|both
 ar:right这两个声明就没有任何使用的价值，至少在CSS世界中是如此，直接使用clear:both吧。
 
 一般使用伪元素的方式清除浮动
+.clearfix::before,再加一个这个，清除浮动和外边距chong'de
 
 .clear::after{
 content:'';
