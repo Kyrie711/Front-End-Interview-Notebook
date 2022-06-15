@@ -2150,6 +2150,15 @@ function shallowCopy(object) {
   return newObject;
 }
 
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = { ...obj };
+
+let clone = Object.assign({}, user);
+
 // 深拷贝的实现;
 
 function deepCopy(object) {
